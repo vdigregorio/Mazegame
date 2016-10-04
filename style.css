@@ -16,17 +16,120 @@ h1 {
     margin-left: 100px;
     position: absolute;
     bottom: 0;
-    width: 80%;
+    width: 800px;
     height: 50px;
     background-color: black;
 }
 
-#stacker {
+.stacker {
     width: 300px;
     height: 50px;
     background-color: pink;
     position: absolute;
     bottom: 6.5%;
-    margin-left: 350px;
-    display: none;
+    margin-left: 400px;
+    /*    visibility: hidden;
+*/
 }
+
+.tester {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 13.4%;
+    margin-left: 330px;
+}
+
+.tester1 {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    bottom: 20.2%;
+    margin-left: 330px;
+}
+
+.tester2 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 27%;
+    margin-left: 330px;
+}
+
+.tester3 {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    bottom: 33.8%;
+    margin-left: 330px;
+}
+
+.tester4 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 40.6%;
+    margin-left: 330px;
+}
+
+.tester5 {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    bottom: 47.4%;
+    margin-left: 330px;
+}
+
+.tester6 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 54.2%;
+    margin-left: 330px;
+}
+
+.tester7 {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    bottom: 61.1%;
+    margin-left: 330px;
+}
+
+.tester8 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 67.9%;
+    margin-left: 330px;
+}
+
+.tester9 {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    bottom: 74.7%;
+    margin-left: 330px;
+}
+
+.tester10 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 81.5%;
+    margin-left: 330px;
+}
+@-webkit-keyframes backandforth {0%{left:0;} 50%{left:100%;} 100%{left:0;}}
+
+@keyframes backandforth {0%{left:0;} 50%{left:100%;} 100%{left:0;}}
