@@ -1,0 +1,14 @@
+body{
+  width: 90%;
+  height: 90%;
+  margin: auto 0;
+
+  background-size: cover;
+}
+canvas{
+  margin: 0 auto;
+   background-image: url('images/maze.jpg');
+   width: 758px;
+   height: 751px;
+}
+
