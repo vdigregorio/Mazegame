@@ -12,21 +12,6 @@ $(document).ready(function() {
 
 
     var going = window.setInterval(function() {
-
-
-        // if the stacker moves to the left 100 times
-        // we should change direction
-
-
-
-
-
-        // if it has a class of right then move 100 times then toggle class
-
-
-
-
-
         // the count should be reset to 0 when it reaches 100
         var count = $('.stacker').data('count');
 
@@ -46,15 +31,11 @@ $(document).ready(function() {
             $(".stacker").css({ left: position.left - 1 });
         }
 
-
-
-        // stackLeft();
-        // stackRight();
         console.log(count);
 
     }, 10);
     var going1 = window.setInterval(function() {
-    var count1 = $('.tester').data('count');
+        var count1 = $('.tester').data('count');
 
         // if the count reaches 100 set to 0
         if (count1 === 200) {
@@ -72,10 +53,6 @@ $(document).ready(function() {
             $(".tester").css({ left: position.left - 1 });
         }
 
-
-
-        // stackLeft();
-        // stackRight();
         console.log(count1);
 
     }, 10);
@@ -92,17 +69,23 @@ $(document).ready(function() {
         //dont forget
         keys[e.keyCode] = true;
 
-        // enter
+        // space
         if (keys[32]) {
             // animate the div
             console.log(going)
             window.clearInterval(going);
             $('.tester').css('visibility', 'visible');
-            // window.clearInterval(going1);
-           // prevent default browser behavior
-            e.preventDefault();
+
+            // prevent default browser behavior
+
+
+
+            //animate div again
+
         }
+        e.preventDefault();
     }
+
 
     function keysReleased(e) {
         // mark keys that were released????
