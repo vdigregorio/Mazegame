@@ -17,24 +17,25 @@ h1 {
     font-family: 'lobster';
     font-size: 45px;
 }
-a{
-  text-decoration: none;
-  color: black;
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 #platform {
-    margin-left: 100px;
-    position: absolute;
-    bottom: 0;
-    width: 800px;
+    width: 100%;
     height: 50px;
     background-color: black;
     border-radius: 7px;
     opacity: 0.9;
+    bottom: 0;
+    position: absolute;
 }
 
 .holdbox {
-    height: 600px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .stacker {
@@ -43,33 +44,23 @@ a{
     background-color: pink;
     position: absolute;
     bottom: 6.5%;
-    margin-left: 230px;
-    border: 1px solid red;
+    margin: 0 auto;
+    border: 1px solid black;
     border-radius: 7px;
-    /*    visibility: hidden;
+   /*     visibility: hidden;
 */
 }
 
-.tester {
-    width: 300px;
-    height: 50px;
-    background-color: red;
-    border: 1px solid pink;
-    position: absolute;
-    bottom: 13.4%;
-    margin-left: 230px;
-    border-radius: 7px;
-    visibility: hidden;
-}
+
 
 .tester1 {
     width: 300px;
     height: 50px;
-    background-color: pink;
-    border: 1px solid red;
+    background-color: red;
+    border: 1px solid black;
     position: absolute;
-    bottom: 20.2%;
-    margin-left: 230px;
+    bottom: 13.4%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -77,11 +68,11 @@ a{
 .tester2 {
     width: 300px;
     height: 50px;
-    background-color: red;
-    border: 1px solid pink;
+    background-color: pink;
+    border: 1px solid black;
     position: absolute;
-    bottom: 27%;
-    margin-left: 230px;
+    bottom: 20.2%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -89,11 +80,11 @@ a{
 .tester3 {
     width: 300px;
     height: 50px;
-    background-color: pink;
-    border: 1px solid red;
+    background-color: red;
+    border: 1px solid black;
     position: absolute;
-    bottom: 33.8%;
-    margin-left: 230px;
+    bottom: 27%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -101,11 +92,11 @@ a{
 .tester4 {
     width: 300px;
     height: 50px;
-    background-color: red;
-    border: 1px solid pink;
+    background-color: pink;
+    border: 1px solid black;
     position: absolute;
-    bottom: 40.6%;
-    margin-left: 230px;
+    bottom: 33.8%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -113,11 +104,11 @@ a{
 .tester5 {
     width: 300px;
     height: 50px;
-    background-color: pink;
-    border: 1px solid red;
+    background-color: red;
+    border: 1px solid black;
     position: absolute;
-    bottom: 47.4%;
-    margin-left: 230px;
+    bottom: 40.6%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -125,11 +116,11 @@ a{
 .tester6 {
     width: 300px;
     height: 50px;
-    background-color: red;
-    border: 1px solid pink;
+    background-color: pink;
+    border: 1px solid black;
     position: absolute;
-    bottom: 54.2%;
-    margin-left: 230px;
+    bottom: 47.4%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -137,11 +128,11 @@ a{
 .tester7 {
     width: 300px;
     height: 50px;
-    background-color: pink;
-    border: 1px solid red;
+    background-color: red;
+    border: 1px solid black;
     position: absolute;
-    bottom: 61.1%;
-    margin-left: 230px;
+    bottom: 54.2%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -149,11 +140,11 @@ a{
 .tester8 {
     width: 300px;
     height: 50px;
-    background-color: red;
-    border: 1px solid pink;
+    background-color: pink;
+    border: 1px solid black;
     position: absolute;
-    bottom: 67.9%;
-    margin-left: 230px;
+    bottom: 61.1%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -161,11 +152,11 @@ a{
 .tester9 {
     width: 300px;
     height: 50px;
-    background-color: pink;
-    border: 1px solid red;
+    background-color: red;
+    border: 1px solid black;
     position: absolute;
-    bottom: 74.7%;
-    margin-left: 230px;
+    bottom: 67.9%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
 }
@@ -173,11 +164,25 @@ a{
 .tester10 {
     width: 300px;
     height: 50px;
-    background-color: red;
-    border: 1px solid pink;
+    background-color: pink;
+    border: 1px solid black;
     position: absolute;
-    bottom: 81.5%;
-    margin-left: 230px;
+    bottom: 74.7%;
+    margin: 0 auto;
     border-radius: 7px;
     visibility: hidden;
+}
+.tester11 {
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 81.5%;
+    margin: 0 auto;
+    border-radius: 7px;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1035px) {
+
 }

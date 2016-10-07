@@ -6,19 +6,20 @@
     <link rel="stylesheet" type="text/css" href="style2.css">
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Amatic+SC:400,700|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script2.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Stacker</h1>
     </header>
-    <form action="http://localhost:3000/showForm" method="post">
-        <form action="landingpage.html" class="list-maker-form" method="get">
+    <form action="index.html" class="list-maker-form" method="get">
+        <div class="bgc">
             <fieldset class="field">
                 <p>Sign up with your email address</p>
                 <input type="text" class="one" name="Username" value="Username" onfocus="if (this.value=='Username') this.value='';">
                 <br>
-                <input type="text" class="one" name="Password" value="Password" onfocus="if (this.value=='Password') this.value='';">
+                <input type="password" class="one" name="Password" value="Password" onfocus="if (this.value=='Password') this.value='';">
                 <br>
                 <input type="text" class="one" name="Email" value="Email" onfocus="if (this.value=='Email') this.value='';">
                 <br>
@@ -86,8 +87,9 @@
                     <input class="one" type="button" name="submit" value="Sign Up">
                 </a>
             </fieldset>
-        </form>
-        </form>
+        </div>
+    </form>
+    </form>
 </body>
 
 </html>

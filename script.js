@@ -16,7 +16,7 @@ $(document).ready(function() {
         var count = $('.stacker').data('count');
 
         // if the count reaches 100 set to 0
-        if (count === 200) {
+        if (count === 400) {
             $('.stacker').toggleClass('right');
             $('.stacker').data('count', 0);
         } else {
@@ -31,29 +31,29 @@ $(document).ready(function() {
             $(".stacker").css({ left: position.left - 1 });
         }
 
-        console.log(count);
+        // console.log(count);
 
     }, 10);
     var going1 = window.setInterval(function() {
-        var count1 = $('.tester').data('count');
+        var count1 = $(targetBlock).data('count');
 
         // if the count reaches 100 set to 0
-        if (count1 === 200) {
-            $('.tester').toggleClass('right');
-            $('.tester').data('count', 0);
+        if (count1 === 300) {
+            $(targetBlock).toggleClass('right');
+            $(targetBlock).data('count', 0);
         } else {
-            $('.tester').data('count', count1 + 1);
+            $(targetBlock).data('count', count1 + 1);
         }
 
-        var position = $(".tester").position();
+        var position = $(targetBlock).position();
 
-        if ($('.tester').hasClass('right')) {
-            $(".tester").css({ left: position.left + 1 });
+        if ($(targetBlock).hasClass('right')) {
+            $(targetBlock).css({ left: position.left + 1 });
         } else {
-            $(".tester").css({ left: position.left - 1 });
+            $(targetBlock).css({ left: position.left - 1 });
         }
 
-        console.log(count1);
+        // console.log(count1);
 
     }, 10);
 
@@ -62,6 +62,13 @@ $(document).ready(function() {
     window.addEventListener("keyup", keysReleased, false);
 
     var keys = [];
+    var keyPressCount = 0;
+    var targetBlock
+
+    $(document).on("keypress", function() {
+        console.log(keyPressCount);
+
+    });
 
     function keysPressed(e) {
         // store an entry for every key pressed
@@ -70,11 +77,19 @@ $(document).ready(function() {
         keys[e.keyCode] = true;
 
         // space
-        if (keys[32]) {
+        if
+          (keys[32]) {
+            keyPressCount++;
+            targetBlock='.tester'+keyPressCount
+            console.log(targetBlock)
             // animate the div
-            console.log(going)
+            // console.log(going)
             window.clearInterval(going);
-            $('.tester').css('visibility', 'visible');
+
+            $(targetBlock).css('visibility', 'visible');
+            // e.stopPropagation();
+             // window.clearInterval(going1);
+
 
             // prevent default browser behavior
 
@@ -91,12 +106,12 @@ $(document).ready(function() {
         // mark keys that were released????
         keys[e.keyCode] = false;
     }
-    //for loop that switches class every time you press spacebars
+    //for loop that adds class every time you press spacebars
+
+    // ALERT FOR LOSE AND WIN
+    //WHEN DIV IS STOPPED AT SPECIFIC LOCATION AND IT ISNT RIGHT ON TOP OF
+    //THE PREVIOUS ONE,
 
 
 
 });
-// make div move side to side using maybe setinterval()
-
-
-//randomize the color, so every stack is different **SELF BONUS
