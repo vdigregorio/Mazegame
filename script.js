@@ -1,14 +1,11 @@
 console.log('IM WORKING!')
 
-var moving = true;
-var speed = 10;
-
-//this function is moving my first original div left and right continiuously
 
 
-//if ontop of stack, you continue, otherwise the game is over
 $(document).ready(function() {
-
+    var moving = true;
+    var speed = 10;
+    var targetBlock;
 
 
     var going = window.setInterval(function() {
@@ -38,7 +35,7 @@ $(document).ready(function() {
         var count1 = $(targetBlock).data('count');
 
         // if the count reaches 100 set to 0
-        if (count1 === 300) {
+        if (count1 === 400) {
             $(targetBlock).toggleClass('right');
             $(targetBlock).data('count', 0);
         } else {
@@ -63,7 +60,6 @@ $(document).ready(function() {
 
     var keys = [];
     var keyPressCount = 0;
-    var targetBlock
 
     $(document).on("keypress", function() {
         console.log(keyPressCount);
@@ -77,18 +73,17 @@ $(document).ready(function() {
         keys[e.keyCode] = true;
 
         // space
-        if
-          (keys[32]) {
+        if (keys[32]) {
             keyPressCount++;
-            targetBlock='.tester'+keyPressCount
+            targetBlock = '.tester' + keyPressCount
             console.log(targetBlock)
-            // animate the div
-            // console.log(going)
+                // animate the div
+                // console.log(going)
             window.clearInterval(going);
 
             $(targetBlock).css('visibility', 'visible');
             // e.stopPropagation();
-             // window.clearInterval(going1);
+            // window.clearInterval(going1);
 
 
             // prevent default browser behavior
@@ -104,10 +99,13 @@ $(document).ready(function() {
 
     function keysReleased(e) {
         // mark keys that were released????
+
         keys[e.keyCode] = false;
     }
     //for loop that adds class every time you press spacebars
-
+    if ($('.tester').position == $('.stacker').position) {
+        alert('You LOSE');
+    }
     // ALERT FOR LOSE AND WIN
     //WHEN DIV IS STOPPED AT SPECIFIC LOCATION AND IT ISNT RIGHT ON TOP OF
     //THE PREVIOUS ONE,
