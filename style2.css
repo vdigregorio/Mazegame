@@ -21,7 +21,6 @@ h1 {
 fieldset {
     text-align: center;
     border: none;
-
 }
 
 .one {
@@ -41,9 +40,15 @@ fieldset {
     margin-right: 25px;
     font-weight: bolder;
 }
-.bgc{
-    background-color: rgba(128,128,128, 0.9);
+
+.bgc {
+    background-color: rgba(128, 128, 128, 0.9);
     width: 400px;
     margin: 0 auto;
-
 }
+
+.list-maker-form {
+    display: show;
+}
+
+

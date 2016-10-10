@@ -1,8 +1,34 @@
 console.log('IM WORKING!')
 
 
-
 $(document).ready(function() {
+
+    // var searchUrl = window.location.search.charAt(1);
+    //    var split = [];
+    //    split = searchUrl.split("&");
+    //    // var obj = {};
+    //    var form = $('.list-maker-form');
+
+    //    for (i = 0; i < split.length; i++) {
+    //        var arr = [];
+    //        arr = split[i].split("=");
+    //        var key = $('.one');
+
+
+    //        var p1 = $('<p>');
+
+    //        p1.text(key);
+
+    //        $('.box').append(p1);
+
+
+    //        var input = $('.box');
+    //        input.type = 'hidden';
+    //        // input = key;
+    //        form.appendTo(input);
+    //    };
+
+
     var moving = true;
     var speed = 10;
     var targetBlock;
@@ -81,6 +107,7 @@ $(document).ready(function() {
                 // console.log(going)
             window.clearInterval(going);
 
+
             $(targetBlock).css('visibility', 'visible');
             // e.stopPropagation();
             // window.clearInterval(going1);
@@ -92,7 +119,10 @@ $(document).ready(function() {
 
             //animate div again
 
-        }
+        } if (targetBlock !== $('.stacker').css(left)){
+        alert('blah')
+         }
+
         e.preventDefault();
     }
 
@@ -102,10 +132,16 @@ $(document).ready(function() {
 
         keys[e.keyCode] = false;
     }
+
+    $('.colors').on('click', function(){
+      $('.stacker').toggleClass('colorsAF');
+      $('.1 .3 .5 .7 .9 .11').toggleClass('colorsFT');
+    })
     //for loop that adds class every time you press spacebars
-    if ($('.tester').position == $('.stacker').position) {
-        alert('You LOSE');
-    }
+    // if ($('.tester').position == $('.stacker').position) {
+    //     alert('You LOSE');
+    // }
+    // alert($(".stacker").css("margin-left"));
     // ALERT FOR LOSE AND WIN
     //WHEN DIV IS STOPPED AT SPECIFIC LOCATION AND IT ISNT RIGHT ON TOP OF
     //THE PREVIOUS ONE,
