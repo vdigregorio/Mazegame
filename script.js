@@ -3,6 +3,10 @@ console.log('IM WORKING!')
 
 $(document).ready(function() {
 
+ $('.colors').on('click', function(){
+      $('.stacker .tester2 .tester4 .tester6 .tester8 .tester10').css('background-color', 'blue')
+      $('.tester1 .tester3 .tester5 .tester7 .tester9 .tester11').css('background-color', 'purple')
+    });
     // var searchUrl = window.location.search.charAt(1);
     //    var split = [];
     //    split = searchUrl.split("&");
@@ -34,29 +38,29 @@ $(document).ready(function() {
     var targetBlock;
 
 
-    var going = window.setInterval(function() {
-        // the count should be reset to 0 when it reaches 100
-        var count = $('.stacker').data('count');
+    // var going = window.setInterval(function() {
+    //     // the count should be reset to 0 when it reaches 100
+    //     var count = $('.stacker').data('count');
 
-        // if the count reaches 100 set to 0
-        if (count === 400) {
-            $('.stacker').toggleClass('right');
-            $('.stacker').data('count', 0);
-        } else {
-            $('.stacker').data('count', count + 1);
-        }
+    //     // if the count reaches 100 set to 0
+    //     if (count === 400) {
+    //         $('.stacker').toggleClass('right');
+    //         $('.stacker').data('count', 0);
+    //     } else {
+    //         $('.stacker').data('count', count + 1);
+    //     }
 
-        var position = $(".stacker").position();
+    //     var position = $(".stacker").position();
 
-        if ($('.stacker').hasClass('right')) {
-            $(".stacker").css({ left: position.left + 1 });
-        } else {
-            $(".stacker").css({ left: position.left - 1 });
-        }
+    //     if ($('.stacker').hasClass('right')) {
+    //         $(".stacker").css({ left: position.left + 1 });
+    //     } else {
+    //         $(".stacker").css({ left: position.left - 1 });
+    //     }
 
-        // console.log(count);
+    //     // console.log(count);
 
-    }, 10);
+    // }, 10);
     var going1 = window.setInterval(function() {
         var count1 = $(targetBlock).data('count');
 
@@ -105,7 +109,7 @@ $(document).ready(function() {
             console.log(targetBlock)
                 // animate the div
                 // console.log(going)
-            window.clearInterval(going);
+            // window.clearInterval(going1);
 
 
             $(targetBlock).css('visibility', 'visible');
@@ -119,9 +123,9 @@ $(document).ready(function() {
 
             //animate div again
 
-        } if (targetBlock !== $('.stacker').css(left)){
-        alert('blah')
-         }
+        }// if (targetBlock !== $('.stacker').css(left)){
+        // alert('blah')
+         //}
 
         e.preventDefault();
     }
@@ -133,10 +137,7 @@ $(document).ready(function() {
         keys[e.keyCode] = false;
     }
 
-    $('.colors').on('click', function(){
-      $('.stacker').toggleClass('colorsAF');
-      $('.1 .3 .5 .7 .9 .11').toggleClass('colorsFT');
-    })
+
     //for loop that adds class every time you press spacebars
     // if ($('.tester').position == $('.stacker').position) {
     //     alert('You LOSE');
