@@ -2,58 +2,95 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stacker Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Amatic+SC:400,700|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
-    <title>Maze</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src='script.js'></script>
-    <script src='app.js'></script>
-    <!--     <script src="script2.js"></script>
- -->
+            <script src='app.js'></script>
+
 </head>
 
 <body>
     <header>
-        <a href='landingpage.html'><h1>Stacker</h1></a>
-        <form action="http://localhost:3000/showForm" method="post">
-            <div class="box">
-            </div>
-        </form>
+        <h1>Stacker</h1>
     </header>
-    <nav>
-    </nav>
-    <div class='holdbox'>
-        <div class='tester1 right' data-count="0">
+    <form action="landingpage.html" class="list-maker-form" method="get">
+        <div class="bgc">
+            <fieldset class="field">
+                <p>Sign up with your email address</p>
+                <input type="text" class="one" name="Username" value="Username" onfocus="if (this.value=='Username') this.value='';">
+                <br>
+                <input type="password" class="one" name="Password" value="Password" onfocus="if (this.value=='Password') this.value='';">
+                <br>
+                <input type="text" class="one" name="Email" value="Email" onfocus="if (this.value=='Email') this.value='';">
+                <br>
+                <input type="text" class="one" name="Confirm Email" value="Confirm Email" onfocus="if (this.value=='Confirm Email') this.value='';">
+                <br> Date Of Birth
+                <br>
+                <select name="select" class="pop">
+                    <option value="month">Month</option>
+                    <option value="JAN">January</option>
+                    <option value="FEB">February</option>
+                    <option value="MAR">March</option>
+                    <option value="APR">April</option>
+                    <option value="MAY">May</option>
+                    <option value="JUN">June</option>
+                    <option value="JUL">July</option>
+                    <option value="AUG">August</option>
+                    <option value="SEP">September</option>
+                    <option value="OCT">October</option>
+                    <option value="NOV">November</option>
+                    <option value="DEC">December</option>
+                </select>
+                <select name="select" class="pop">
+                    <option value="Day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <input class="pop" type="text" name="year" value="Year" onfocus="if (this.value=='Year') this.value='';">
+                <br>
+                <br>
+                <input class="check" type="checkbox" name="Female" value="Female">Female
+                <input class="check" type="checkbox" name="Male" value="Male">Male
+                <input class="check" type="checkbox" name="Non-binary" value="Non-binary">Non-binary
+                <br>
+                <br>
+                <a href="landingpage.html">
+                    <input class="one" type="button" name="submit" value="Sign Up">
+                </a>
+            </fieldset>
         </div>
-        <div class='tester2 right' data-count="0">
-        </div>
-        <div class='tester3 right' data-count="0">
-        </div>
-        <div class='tester4 right' data-count="0">
-        </div>
-        <div class='tester5 right' data-count="0">
-        </div>
-        <div class='tester6 right' data-count="0">
-        </div>
-        <div class='tester7 right' data-count="0">
-        </div>
-        <div class='tester8 right' data-count="0">
-        </div>
-        <div class='tester9 right' data-count="0">
-        </div>
-        <div class='tester10 right' data-count="0">
-        </div>
-        <div class='tester11 right' data-count="0">
-        </div>
-        <div class='tester12 right' data-count="0">
-        </div>
-    </div>
-    <div id='platform'>
-    <p>Instructions: Press spacebar to stack your bars!
-    <button class="colors">Switch Colors</button></p>
-    </div>
-    <footer>
-    </footer>
+    </form>
+    </form>
 </body>
 
 </html>
