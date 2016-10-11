@@ -12,10 +12,12 @@ $(document).ready(function() {
 
     var moving = true;
     var speed = 10;
-    // var targetBlock;
-
-
+    var keyPressCount = 0;
+    keyPressCount++;
+    var targetBlock = '.tester' + keyPressCount;
     var going1 = window.setInterval(function() {
+
+
         var count1 = $(targetBlock).data('count');
 
         // if the count reaches 100 set to 0
