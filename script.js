@@ -4,7 +4,7 @@ console.log('IM WORKING!')
 $(document).ready(function() {
 
     $('.colors').on('click', function() {
-        $('.stacker .tester2 .tester4 .tester6 .tester8 .tester10').css('background-color', 'blue')
+        $('.tester2 .tester4 .tester6 .tester8 .tester10 .tester12').css('background-color', 'blue')
         $('.tester1 .tester3 .tester5 .tester7 .tester9 .tester11').css('background-color', 'purple')
     });
 
@@ -70,9 +70,8 @@ $(document).ready(function() {
             $(targetBlock).css('visibility', 'visible');
 
 
-        } // if (targetBlock !== $('.stacker').css(left)){
-        // alert('blah')
-        //}
+
+        }
 
         e.preventDefault();
     }
@@ -83,6 +82,9 @@ $(document).ready(function() {
 
         keys[e.keyCode] = false;
     }
+
+      /* Act on the event */
+
 
 
     //for loop that adds class every time you press spacebars

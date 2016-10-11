@@ -194,7 +194,7 @@ p{
 .tester12 {
     width: 300px;
     height: 50px;
-    background-color: red;
+    background-color: pink;
     border: 1px solid black;
     position: absolute;
     bottom: 81.5%;
@@ -214,6 +214,7 @@ border-radius: 10px;
 padding: 5px;
 font-size: 10px;
 font-weight: bolder;
+display: none;
 }
 button:hover{
 border-radius: 15px;
@@ -363,7 +364,7 @@ background-color: purple;
 .tester12 {
     width: 200px;
     height: 50px;
-    background-color: red;
+    background-color: pink;
     border: 1px solid black;
     position: absolute;
     bottom: 81.5%;
